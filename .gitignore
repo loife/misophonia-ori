@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+*.egg-info/
+wandb/
+
+
+# Electron / Node
+node_modules/
+dist/
+out/
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+*.zip
+*.bat
+out/
+*.ckpt
+*.pt
+videos/
+clips_rd/
