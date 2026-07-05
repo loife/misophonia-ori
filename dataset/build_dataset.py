@@ -367,7 +367,7 @@ if __name__ == "__main__":
     write_hear(tr_strong_df, "./out/strong")
 
     tr_weak_df = build_weak(tr_weak_positive_dirs, "./out/weak", split="train", event_labels=["Chewing"])
-    tr_negative_df = build_weak(tr_weak_negative_dirs, "./out/weak", split="train")
+    tr_negative_df = build_weak(tr_weak_negative_dirs, "./out/weak", split="train", event_labels=[])
 
     tr_weak_df = pd.concat([tr_weak_df, tr_negative_df], ignore_index=True)
 
@@ -395,7 +395,7 @@ if __name__ == "__main__":
     write_hear(eval_strong_df, "./out/strong")
 
     eval_weak_df = build_weak(eval_weak_positive_dirs, "./out/weak", split="valid", event_labels=["Chewing"])
-    eval_negative_df = build_weak(eval_weak_negative_dirs, "./out/weak", split="valid")
+    eval_negative_df = build_weak(eval_weak_negative_dirs, "./out/weak", split="valid", event_labels=[])
 
     eval_weak_df = pd.concat([eval_weak_df, eval_negative_df], ignore_index=True)
 
